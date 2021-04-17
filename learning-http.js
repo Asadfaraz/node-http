@@ -1,4 +1,7 @@
 const http = require("http");
+const fs = require("fs");
+
+const homePage = fs.readFileSync("./index.html");
 
 const server = http.createServer((req, res) => {
   // providing headers in reqeust
@@ -17,7 +20,7 @@ const server = http.createServer((req, res) => {
   // Home Page
   if (url == "/") {
     res.writeHead(200, { "content-type": "text/html" });
-    res.write("<h1> Home Page </h1>");
+    res.write(homePage);
     res.end();
   }
   // about page
