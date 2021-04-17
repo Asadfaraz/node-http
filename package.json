@@ -1,0 +1,15 @@
+{
+  "name": "http",
+  "version": "1.0.0",
+  "description": "",
+  "main": "learning-http.js",
+  "scripts": {
+    "start": "nodemon learning-http.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
